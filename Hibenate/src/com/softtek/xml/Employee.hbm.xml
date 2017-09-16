@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.softtek.model.Employee" table="employee">
+		<id name="empno" length="3"> 
+			<generator class="assigned"></generator>
+		</id>
+		<property name="name" column="name" length="20"/>
+		<property name="phNum" column="phnum" length="10"/>
+		<property name="address" column="address" length="50"/>
+		<property name="salary" column="salary" length="8"/>
+	</class>
+</hibernate-mapping>
